@@ -15,7 +15,7 @@ export class MoviesService {
     const findMovie = this.movies.find(movie => movie.id === id);
 
     if (!findMovie) {
-      throw new NotFoundException(`Movie ID ${id} is Not Fount`);
+      throw new NotFoundException(`Movie ID ${id} is Not Found`);
     }
 
     return findMovie;
